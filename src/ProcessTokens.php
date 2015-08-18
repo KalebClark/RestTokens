@@ -1,6 +1,6 @@
 <?php
 
-namespace KalebClark\RestToken;
+namespace KalebClark\RestTokens;
 
 use Closure;
 

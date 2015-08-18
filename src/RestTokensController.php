@@ -1,11 +1,11 @@
 <?php
 
-namespace KalebClark\RestToken;
+namespace KalebClark\RestTokens;
 
 use App\Http\Controllers\Controller;
-use KalebClark\RestToken\RestTokensModel;
+use KalebClark\RestTokens\RestTokensModel;
 
-class RestTokenController extends Controller {
+class RestTokensController extends Controller {
 
     public function __construct()
     {
@@ -20,6 +20,6 @@ class RestTokenController extends Controller {
 //        $rt->active = 1;
  //       $rt->save();
         $tokens = RestTokensModel::all();
-        return view('RestToken::admin')->with('tokens', $tokens);
+        return view('RestTokens::admin')->with('tokens', $tokens);
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace KalebClark\RestToken;
+namespace KalebClark\RestTokens;
 
 use Illuminate\Support\ServiceProvider;
 
-class RestTokenServiceProvider extends ServiceProvider
+class RestTokensServiceProvider extends ServiceProvider
 {
 
     /**
@@ -27,7 +27,7 @@ class RestTokenServiceProvider extends ServiceProvider
 
         // Load Views from here
         $this->loadViewsFrom(
-            __DIR__.'/views', 'RestToken'
+            __DIR__.'/views', 'RestTokens'
         );
 
         // Loading routes
@@ -74,7 +74,7 @@ class RestTokenServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('RestTokenClass', 'KalebClark\RestToken\RestTokenClass');
+        $this->app->bind('RestTokensClass', 'KalebClark\RestTokens\RestTokensClass');
     }
 
 }

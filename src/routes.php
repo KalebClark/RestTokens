@@ -1,4 +1,4 @@
 <?php
 
 // Main route for administration
-Route::get('rest-tokens', 'KalebClark\RestToken\RestTokenController@index');
+Route::get('rest-tokens', 'KalebClark\RestTokens\RestTokensController@index');

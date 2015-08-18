@@ -1,5 +1,5 @@
 {
-    "name": "KalebClark/RestToken",
+    "name": "KalebClark/RestTokens",
     "license": "MIT",
     "description": "Token based authentication for REST API built in Laravel 5",
     "keywords": [],    
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "KalebClark\\RestToken\\": "src/"
+            "KalebClark\\RestTokens\\": "src/"
         }
     }  
 }

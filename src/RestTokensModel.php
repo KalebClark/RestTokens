@@ -1,7 +1,7 @@
 <?php
 
 //namespace App;
-namespace KalebClark\RestToken;
+namespace KalebClark\RestTokens;
 
 use Illuminate\Database\Eloquent\Model;
 
