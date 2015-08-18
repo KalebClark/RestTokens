@@ -1,21 +1,22 @@
 {
-    "name": "my-vendor/my-package",
+    "name": "KalebClark/RestToken",
     "license": "MIT",
-    "description": "Description about your package",
+    "description": "Token based authentication for REST API built in Laravel 5",
     "keywords": [],    
     "authors": [
         {
-            "name": "Your Name",
-            "email": "email@example.com"
+            "name": "Kaleb Clark",
+            "email": "kaleb@abraxxus.net"
         }
     ],
     "require": {
         "php": ">=5.5.9",
+        "illuminate/html": "^5.0",
         "illuminate/support": "5.1.*"
     },
     "autoload": {
         "psr-4": {
-            "MyVendor\\MyPackage\\": "src/"
+            "KalebClark\\RestToken\\": "src/"
         }
     }  
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace MyVendor\MyPackage;
+namespace KalebClark\RestToken;
 
 use Illuminate\Support\ServiceProvider;
 
-class MyPackageServiceProvider extends ServiceProvider
+class RestTokenServiceProvider extends ServiceProvider
 {
 
     /**
@@ -22,6 +22,14 @@ class MyPackageServiceProvider extends ServiceProvider
     public function boot()
     {
 
+        // Autoload required packages
+//        require __DIR__.'/../vendor/autoload.php';
+
+        // Load Views from here
+        $this->loadViewsFrom(
+            __DIR__.'/views', 'RestToken'
+        );
+
         // Loading routes
         if (!$this->app->routesAreCached()) {
             require __DIR__ . '/routes.php';
@@ -32,10 +40,12 @@ class MyPackageServiceProvider extends ServiceProvider
             __DIR__ . '/config/my-package.php' => config_path('my-package.php'),
         ]);
 
+
         // Publishing views
-        $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views'),
-        ]);
+//        $this->publishes([
+//            __DIR__ . '/views' => base_path('resources/views'),
+//        ]);
+
 
         // Loading translations
         $this->loadTranslationsFrom(__DIR__ . '/translations', 'my-package');
@@ -64,7 +74,7 @@ class MyPackageServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('MyPackageClass', 'MyVendor\MyPackage\MyPackageClass');
+        $this->app->bind('RestTokenClass', 'KalebClark\RestToken\RestTokenClass');
     }
 
 }
