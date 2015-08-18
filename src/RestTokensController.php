@@ -22,4 +22,9 @@ class RestTokensController extends Controller {
         $tokens = RestTokensModel::all();
         return view('RestTokens::admin')->with('tokens', $tokens);
     }
+
+    public function create()
+    {
+        return view('RestTokens::create');
+    }
 }
