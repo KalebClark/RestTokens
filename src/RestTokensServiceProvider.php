@@ -30,6 +30,11 @@ class RestTokensServiceProvider extends ServiceProvider
             __DIR__.'/views', 'RestTokens'
         );
 
+        // Publishing views
+//        $this->publishes([
+//            __DIR__ . '/views' => base_path('resources/views'),
+//        ]);
+
         // Loading routes
         if (!$this->app->routesAreCached()) {
             require __DIR__ . '/routes.php';
@@ -41,10 +46,7 @@ class RestTokensServiceProvider extends ServiceProvider
         ]);
 
 
-        // Publishing views
-//        $this->publishes([
-//            __DIR__ . '/views' => base_path('resources/views'),
-//        ]);
+
 
 
         // Loading translations
