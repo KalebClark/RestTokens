@@ -17,6 +17,7 @@ class RestTokensController extends Controller {
 
     public function index()
     {
+        //TODO: Some stuff.
         $tokens = RestTokensModel::all();
 
         // No tokens exist, redirec to creation.
