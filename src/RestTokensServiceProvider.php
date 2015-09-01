@@ -42,20 +42,16 @@ class RestTokensServiceProvider extends ServiceProvider
 
         // Publishing configs
         $this->publishes([
-            __DIR__ . '/config/my-package.php' => config_path('my-package.php'),
+            __DIR__ . '/config/rest-tokens.php' => config_path('rest-tokens.php'),
         ]);
-
-
-
-
 
         // Loading translations
         $this->loadTranslationsFrom(__DIR__ . '/translations', 'my-package');
 
         // Publishing public assets
-        $this->publishes([
-            __DIR__ . '/assets' => public_path('my-vendor/my-package'),
-        ], 'public');
+        //$this->publishes([
+        //    __DIR__ . '/assets' => public_path('kalebclark/rest-tokens'),
+        //], 'public');
 
         // Publishing migrations
         $this->publishes([
@@ -63,10 +59,9 @@ class RestTokensServiceProvider extends ServiceProvider
         ], 'migrations');
 
         // Publishing seeds
-        $this->publishes([
-            __DIR__ . '/seeds' => database_path('/seeds'),
-        ], 'migrations');
-
+        //$this->publishes([
+        //    __DIR__ . '/seeds' => database_path('/seeds'),
+        //], 'migrations');
     }
 
     /**
