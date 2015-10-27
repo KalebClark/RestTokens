@@ -3,6 +3,8 @@
 @section('content')
 <h3>Create New Token</h3>
     <form action="/rest-tokens/create" METHOD="POST">
+        {{--<input type="hidden" name="_token" id="csrf-token" value="{{ csrf_field() }}" />--}}
+        {{ csrf_field() }}
         <table>
             <tr>
                 <td>Username:</td>
