@@ -20,7 +20,7 @@ class RestTokensController extends Controller {
         //TODO: Some stuff.
         $tokens = RestTokensModel::all();
 
-        // No tokens exist, redirec to creation.
+        // No tokens exist, redirect to creation.
         if(!count($tokens)) {
             return redirect('/rest-tokens/new');
         }

@@ -6,4 +6,11 @@ Laravel 5 Rest Tokens.
     PHP >= 5.5.9 
     
 ## Installation
+### composer.json
+```
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/KalebClark/laravel-rest-tokens.git"
+    }],
+```
 
